@@ -18,6 +18,8 @@ reset.addEventListener("click", () => {
   wrapper.classList.remove("bg-red-700", "bg-green-600");
   wrapper.classList.add("bg-blue-950");
   resultText.textContent = "Guess my number";
+  numberInput.toggleAttribute("disabled", "");
+  btnInput.toggleAttribute("disabled", "");
 });
 
 form.addEventListener("submit", (e) => {
@@ -38,6 +40,8 @@ form.addEventListener("submit", (e) => {
     wrapper.classList.remove("bg-blue-950");
     wrapper.classList.remove("bg-red-700");
     wrapper.classList.add("bg-green-600");
+    numberInput.setAttribute("disabled", "");
+    btnInput.setAttribute("disabled", "");
   }
 });
 // for (let i = 0; i <= 10; i++) {
