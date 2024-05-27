@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind</title>
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body class="bg-white flex justify-center items-center py-24">
+    <div
+      class="w-[700px] h-[500px] rounded-3xl bg-blue-950 font-sans flex flex-col justify-between items-center py-8"
+      id="wrapper"
+    >
+      <div class="flex justify-around items-center gap-52">
+        <button
+          class="bg-white hover:bg-blue-950 text-blue-950 font-bold hover:text-white py-2 px-4 border border-blue-950 hover:border-white rounded max-w-20"
+          id="again"
+        >
+          Again
+        </button>
+        <h3 class="text-white font-sans font-semibold">
+          Guess any number between 1 and 10
+        </h3>
+      </div>
+      <div
+        class="text-white text-5xl text-center font-extrabold py-12 px-4 border-2 rounded-full"
+        id="center-text"
+      >
+        Guess my number
+      </div>
+      <div class="flex justify-around items-center gap-[60px]">
+        <form id="form">
+          <input
+            type="number"
+            class="py-4 px-8 appearance-none rounded-md"
+            id="input"
+            placeholder="Enter a number from 1-10:"
+          />
+          <button
+            type="submit"
+            class="bg-white hover:bg-blue-950 text-blue-950 font-bold hover:text-white py-4 px-4 border border-blue-950 hover:border-white rounded"
+            id="btn-input"
+          >
+            Submit
+          </button>
+        </form>
+        <div>
+          <h2
+            class="font-semibold text-2xl tracking-wide text-white text-center my-3"
+            id="start"
+          >
+            Start game :)
+          </h2>
+          <h3
+            class="font-semibold text-2xl tracking-wide text-white text-center my-3"
+            id="attempts"
+          >
+            Attempts: 0
+          </h3>
+          <h3
+            class="font-semibold text-2xl tracking-wide text-white text-center my-3"
+            id="record"
+          >
+            Record: 0
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
